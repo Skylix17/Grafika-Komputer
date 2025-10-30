@@ -4,6 +4,15 @@ x = 300;
 y = 300;
 size = 80;
 
+function car(x, y, size) {
+  rectMode(CENTER);
+  fill(255, 0, 0);
+  rect(x, y, size + 70, size, 12, 12, 0, 0);
+  fill(0);
+  circle(x - 30, y + 40, size - 25);
+  circle(x + 35, y + 40, size - 25);
+}
+
 function setup() {
   createCanvas(600, 600);
 }
@@ -32,5 +41,5 @@ function draw() {
   } else if (y + size / 2 <= 0) {
     y = height + size / 2;
   }
-  circle(x, y, size);
+  car(x, y, size);
 }
