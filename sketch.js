@@ -21,5 +21,16 @@ function draw() {
       x += 4;
     }
   }
+
+  if (x - size / 2 >= width) {
+    x = 0 - size / 2;
+  } else if (x + size / 2 <= 0) {
+    x = width + size / 2;
+  }
+  if (y - size / 2 >= height) {
+    y = 0 - size / 2;
+  } else if (y + size / 2 <= 0) {
+    y = height + size / 2;
+  }
   circle(x, y, size);
 }
