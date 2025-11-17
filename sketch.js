@@ -13,6 +13,7 @@ function car(x, y, size) {
   circle(x + 35, y + 40, size - 25);
 }
 
+
 function setup() {
   createCanvas(600, 600);
 }
